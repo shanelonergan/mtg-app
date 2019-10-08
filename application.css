@@ -1,0 +1,185 @@
+/**{
+	background: black;
+}*/
+
+/* Add a background color to the top navigation */
+.topnav {
+  background-color: #272643;
+  overflow: hidden;
+  font-family: source-code-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px #1c1c31;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #2c698d; 
+  color: #ffffff;
+  box-shadow: 3px 5px 10px 3px #1c1c31;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #bae8e8;
+  color: #2c698d;
+  box-shadow: 3px 5px 10px 3px #1c1c31;
+  text-shadow: none;
+}
+
+body{
+	background-color: rgba(39,38,67, 1); 
+}
+                              
+.card-holder {
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-family: source-code-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-holder > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header{
+  font-family: source-code-pro, monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px #1c1c31;
+}
+
+.header:hover{
+  transform: scale(1.5);
+  transform-origin: center top;
+}
+
+/*.header:hover > #background{
+  filter: blur(5px);
+}*/
+
+.focus:hover:before {
+  pointer-events: none;
+  content: "";
+  background: #1c1c31;
+  opacity: 0.75;
+  position: fixed;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 99999px;
+  width: 99999px;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  text-align: left;
+  display: flex;
+}
+.text{
+	flex: 2;
+	list-style-type: none;
+	margin: auto;
+	text-shadow: 2px 2px 4px #1c1c31;
+}
+
+.image{
+	flex: 1;
+}
+
+/*.hover-zoom-image{
+
+}*/
+
+#card-art{
+  -moz-box-shadow: 3px 3px 15px 6px #1c1c31;
+  -webkit-box-shadow: 3px 3px 15px 6px #1c1c31;
+  box-shadow: 3px 3px 15px 6px #1c1c31;
+  transition: transform .5s ease;
+}
+
+/*.hover-zoom-card-art{
+  transform: scale(1.5);
+  transform-origin: left top;
+  z-index: 2
+}*/
+
+.mana-cost:hover{
+  transform: scale(1.5);
+  transform-origin: left top;
+}
+
+#type:hover{
+  transform: scale(1.5);
+  transform-origin: left top;
+}
+
+#text:hover{
+  transform: scale(1.5);
+  transform-origin: right top;
+}
+
+.shuffle-btn {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #bae8e8; 
+  border: none;
+  /*border-radius: 12px;*/
+  color: #2c698d;
+  padding: 15px 32px;
+  box-shadow: 3px 3px 15px 3px #1c1c31;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
+}
+
+.shuffle-btn:hover {
+  background-color: #2c698d; 
+  color: #ffffff;
+}
+
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em; 
+}
